@@ -73,6 +73,10 @@ resource "aws_ecs_task_definition" "app" {
         {
           name  = "REDIS_URL"
           value = "redis://${var.redis_host}:${var.redis_port}"
+        },
+        {
+          name  = "PORT"
+          value = "3000"
         }
       ]
     }

@@ -57,7 +57,7 @@ module "ecs" {
   
   db_username = "postgres"
   db_password = var.rds_password
-  db_host     = module.rds.rds_endpoint
+  db_host     = module.rds.rds_host
   db_port     = 5432
   db_name     = "time_tracker"
   
